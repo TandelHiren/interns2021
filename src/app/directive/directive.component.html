@@ -1,0 +1,19 @@
+<h2> Component Directive Example</h2>
+<button class=" btn-dark" (click)="btnClick()">Click Me</button>
+
+<h2>Structural Directives Example</h2>
+<div *ngIf="isShow">ngIf Example</div>
+<!-- ng for example -->
+<div *ngFor = "let title of fetchData">
+    {{title.title}} -- {{title.description}} -- {{title.tagline}} {{title.date}}
+  </div>
+
+<h2>Attribute Directives Example</h2>
+
+<p [ngStyle]="{'color':'red', 'font-weight':'bold'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae impedit esse nulla alias fuga, rem laudantium ipsam aspernatur. Temporibus vero ipsum amet? Minima corporis, optio quo quis laborum consequatur?</p>
+
+<div [ngClass]=" flag ? 'primary' : 'secondary'">
+    sometext
+  </div>
+  
+  <button (click)="flag = !flag">Change</button>
