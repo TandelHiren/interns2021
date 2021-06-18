@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PipeComponent implements OnInit {
   date = new Date();
   price = 10000;
-  title = 'abc def hij';
+  title = 'hiren tandel';
   search: string;
   list = [
     'Professor',

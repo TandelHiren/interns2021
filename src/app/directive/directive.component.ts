@@ -7,33 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectiveComponent implements OnInit {
 
-  public isShow: boolean = true;
-  public flag: boolean = true;
+  public isShow: boolean = false;
+  public flag: boolean = false;
   public fetchData = [
     {
       "title": "saurabh",
       "description": "dd",
       "tagline": "tt",
-      "date": "dd"
+      "date": "dd",
+      "currency":'INR'
     },
     {
       "title": "aman",
       "description": "dd",
       "tagline": "tt",
-      "date": "dd"
+      "date": "dd",
+      "currency":'Dollar'
     },
     {
       "title": "jessica",
       "description": "dd",
       "tagline": "tt",
-      "date": "dd"
+      "date": "dd",
+      "currency":'Dollar'
     },
     {
       "title": "rosh",
       "description": "dd",
       "tagline": "tt",
-      "date": "dd"
-    }];
+      "date": "dd",
+      "currency":'INR'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

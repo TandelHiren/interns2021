@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TitlecasePipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
+    debugger
     //first i split whole the line after space and store it in to the val constant 
     const val = value.split(' ')
 
