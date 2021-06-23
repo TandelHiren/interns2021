@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path:'behavior-subject',
     loadChildren: () => import('./behaviour-subject/behaviour-subject.module').then(m => m.BehaviourSubjectModule)
+  },
+  {
+    path:'rxjs',
+    loadChildren: () => import('./rxjs-1/rxjs/rxjs.module').then(m => m.RxjsModule)
   }
 ];
 
