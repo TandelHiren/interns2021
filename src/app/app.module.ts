@@ -10,7 +10,7 @@ import { TitlecasePipe } from './pipe/tittle-Case.pipe';
 import { ListfilterPipe } from './pipe/list-filter.pipe';
 import { TruncatePipe } from './truncate.pipe';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,8 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   // entryComponents: [ BootstrapComponent, PipeComponent ]
