@@ -38,7 +38,16 @@ const routes: Routes = [
   {
     path:'rxjs',
     loadChildren: () => import('./rxjs-1/rxjs/rxjs.module').then(m => m.RxjsModule)
-  }
+  },
+  {
+    path:'use-class',
+    loadChildren: () => import('./use-class/use-class.module').then(m => m.UseClassModule)
+  },
+  {
+    path:'use-existing',
+    loadChildren: () => import('./use-existing/use-existing.module').then(m => m.UseExistingModule)
+  },
+  
 ];
 
 @NgModule({
