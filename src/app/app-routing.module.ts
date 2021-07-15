@@ -47,6 +47,10 @@ const routes: Routes = [
     path:'use-existing',
     loadChildren: () => import('./use-existing/use-existing.module').then(m => m.UseExistingModule)
   },
+  {
+    path:'dynamic-component',
+    loadChildren: () => import('./dynamic-component/dynamic-component.module').then(m => m.DynamicComponentModule)
+  },
   
 ];
 
