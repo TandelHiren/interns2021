@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BootstrapComponent } from './bootstrap.component';
+import { IntervalComponent } from './interval.component';
 
-describe('BootstrapComponent', () => {
-  let component: BootstrapComponent;
-  let fixture: ComponentFixture<BootstrapComponent>;
+describe('IntervalComponent', () => {
+  let component: IntervalComponent;
+  let fixture: ComponentFixture<IntervalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BootstrapComponent ]
+      declarations: [ IntervalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BootstrapComponent);
+    fixture = TestBed.createComponent(IntervalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

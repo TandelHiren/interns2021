@@ -1,13 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 /* Add application styles & imports to this file! */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-.card{
-  width: 25rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@1,300&display=swap');
+// body{
+//   font-family: 'Inter', sans-serif;
+// }
+
+:root{
+  --bs-font-sans-serif:'Inter', sans-serif;
 }
-.card{
-  width: 25rem;
-}
-.header
-{
-background: #6ddaad;
-}
+// .card{
+//   width: 25rem;
+// }
+// .card{
+//   width: 25rem;
+// }
+// .header
+// {
+// background: #6ddaad;
+// }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { from, of } from 'rxjs';
-import { map, mergeAll, mergeMap } from 'rxjs/operators';
+import { delay, map, mergeAll, mergeMap } from 'rxjs/operators';
 import { UtilityService } from '../utility.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class MergeMapComponent implements OnInit {
   constructor(private utilityService: UtilityService) { }
 
   getData(data) {
-    return of(data + ' video Uploaded')
+    return of(data + ' video Uploaded').pipe(delay(1000))
   }
   ngOnInit() {
     const source = from(['tech', 'comedy', 'news']);
